@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
+
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
@@ -9,9 +11,9 @@ class SideBar extends Component {
     return(
         <div className='sideBar'>
             {/* links */}
-            <div className="github"><FaGithub className='icono'/></div>
-            <div className="linkedin"><FaLinkedin className='icono'/></div>
-            <div className="mail"><CiMail className='icono'/></div>
+            <Link className="github" to='https://github.com/MiliBrime' target="_blank"><FaGithub className='icono'/></Link>
+            <Link className="linkedin" to='https://www.linkedin.com/in/milagros-brime/' target="_blank"><FaLinkedin className='icono'/></Link>
+            <Link to='mailto:milibrime@hotmail.com' className="mail"><CiMail className='icono'/></Link>
         </div>
     )
   }

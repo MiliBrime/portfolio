@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
-import "../../App.css"
-import NavBar from './NavBar';
-import Content from './Content';
-import SideBar from './SideBar';
+import {Link, Route, Routes} from 'react-router-dom';
+
+import '../../App.css';
+
+import Home from './Home';
+import About from './About';
 
 class App extends Component {
   render(){
     return(
       <>
-      <NavBar/>
-      <Content/>
-      <SideBar/>
+      <Link to="/" exact="true"></Link>
+      <Link to="/about"></Link>
+
+      <Routes>
+        <Route path= "/" exact="true" element={<Home/>}/>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
       </>
     )
   }

@@ -2,7 +2,11 @@ import React, { Component } from 'react';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import profile from '../images/perfil-.jpg'; 
 
-class Content extends Component {
+class ContentHome extends Component {
+  handleClick = () => {
+    window.location.href = '/about';
+  };
+  
   render(){
     return(
         <div className='centerContent'>
@@ -21,4 +25,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default ContentHome;
