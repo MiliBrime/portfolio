@@ -1,0 +1,136 @@
+*{
+  background-color: #53138D;
+}
+
+/* top bar */
+.navBarContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 30px; 
+}
+
+.topBar {
+  display: flex;
+}
+
+.itemTopBar {
+  margin-right: 20px; 
+  color:#ffff
+}
+/* END top bar */
+
+/* Center content */
+
+.profileImg{
+  max-width: 250px;
+  max-height: 300px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 50px 5px rgba(0, 0, 0, 0.5) 
+
+}
+
+.centerInfo {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 40%;
+}
+
+.text{
+  color:white
+}
+
+.img{
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+  
+}
+
+.hello {
+  font-size: 22px;
+  color:white;
+  margin-bottom: 3px;
+}
+
+.name {
+  font-size: 38px;
+  color: #B8860B;
+  margin:0;
+}
+
+.fullstack {
+  font-size: 38px;
+  font-style: italic;
+  color:white;
+  margin: 0;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap; 
+  border-right: 2px solid; 
+  animation: typing 4s steps(40) infinite;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  90% { width: 85% } 
+  100% { width: 85% } 
+}
+
+.cursor {
+  display: inline-block;
+  width: 0;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.aboutMeButton{
+  background-color: #B8860B;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: white;
+  font-weight: 400;
+  padding: 8px;
+}
+
+.arrow{
+  background-color: #B8860B;
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+}
+/* END Center content */
+
+/* Sidebar */
+.sideBar{
+  margin-left: 10px;
+}
+
+.icono{
+  background-color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.github{
+  color:black
+}
+
+.linkedin{
+  color:#0077B5
+}
+
+.mail{
+  color: #030169
+}
+/* END Sidebar */
