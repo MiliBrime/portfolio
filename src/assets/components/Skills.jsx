@@ -15,31 +15,60 @@ import { SiVisualstudiocode } from "react-icons/si";
 import { SiIntellijidea } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 
-class About extends Component {
+class Skills extends Component {
   render(){
+    const skills = [
+      { icon: <FaHtml5 />, name: "HTML5" },
+      { icon: <FaCss3Alt />, name: "CSS3" },
+      { icon: <IoLogoJavascript />, name: "JavaScript" },
+      { icon: <FaReact />, name: "React" },
+      { icon: <FaNodeJs />, name: "Node.js" },
+      { icon: <SiMysql />, name: "MySQL" },
+      { icon: <FaJava />, name: "Java" },
+      { icon: <FaGithub />, name: "GitHub" },
+      { icon: <FaTrello />, name: "Trello" },
+      { icon: <SiVisualstudiocode />, name: "Visual Studio Code" },
+      { icon: <SiIntellijidea />, name: "IntelliJ IDEA" },
+    ];
+    const softSkills = [
+      "Communication",
+      "Critical Thinking",
+      "Teamwork",
+      "Responsibility",
+      "Problem Solving",
+      "Time Management",
+      "Adaptability",
+      "Creativity",
+    ];
+
     return(
-        <>
-            <NavBar/>
-            <div>
-                <FaHtml5/>
-                <FaCss3Alt/>
-                <IoLogoJavascript/>
-                <FaNodeJs/>
-                <SiMysql/>
-                <FaJava/>
-                <FaGithub/>
-                <FaTrello/>
-                <SiVisualstudiocode/>
-                <SiIntellijidea/>
-                <FaReact/>
+      <>
+      <NavBar />
+      <div className='group-icons'>
+        <div className='centerInfo-about'>
+          <p className='mySkills'>Technical Skills.</p>
+        <div className="skills-container">
+          {skills.map((skill, index) => (
+            <div key={index} className="skill">
+              {skill.icon}
+              <p>{skill.name}</p>
             </div>
-            <div>
-                <p>soft skills</p>
-            </div>
-            <SideBar/>
-        </>
-    )
-  }
+          ))}
+          </div>
+        </div>
+      </div>
+        <div className='soft-skills'>
+            <p className='mySkills'>Soft Skills.</p>
+            <ul className="soft-skills-list">
+              {softSkills.map((skill, index) => (
+                <li key={index}>{skill}</li>
+              ))}
+            </ul>
+          </div>
+      <SideBar />
+    </>
+  )
+}
 }
 
-export default About;
+export default Skills;
