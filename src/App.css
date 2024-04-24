@@ -18,9 +18,44 @@
   margin-right: 20px; 
   color:#ffff
 }
+.itemTopBar:hover{
+  color:#B8860B;
+}
 /* END top bar */
 
-/* Center content */
+/* Sidebar */
+.sideBar{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icono{
+  background-color: white;
+  font-size: 40px;
+  margin-bottom: 10px;
+  transition: all 0.5s;
+  border-radius: 10%;
+}
+
+.icono:hover{
+  background-color: #53138D;
+}
+
+.github{
+  color:black
+}
+
+.linkedin{
+  color:#0077B5
+}
+
+.mail{
+  color: #030169
+}
+/* END Sidebar */
+
+/* Center HOME content */
 
 .profileImg{
   max-width: 250px;
@@ -109,30 +144,55 @@
   color: white;
   font-weight: 400;
 }
-/* END Center content */
+/* END Center HOME content */
 
-/* Sidebar */
-.sideBar{
-  margin-left: 10px;
-  display: flex;
-  flex-direction: column;
+/* ABOUT */
+
+.centerInfo-about{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 50%;
 }
 
-.icono{
-  background-color: white;
-  font-size: 40px;
-  margin-bottom: 10px;
+.aboutMe{
+    font-size: 38px;
+    color: #B8860B;
+    margin:0;
 }
 
-.github{
-  color:black
+.text-cont{
+  margin-bottom: 0;
+  font-weight: 700;
+  color:white;
 }
 
-.linkedin{
-  color:#0077B5
+.text-cont-1{
+  color:white;
+  margin:0;
+  text-decoration: underline;
 }
 
-.mail{
-  color: #030169
+.text-cont-2{
+  color:white;
+  margin:0;
 }
-/* END Sidebar */
+
+.img-java{
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    left: 65%;
+    top: 60%;
+}
+
+.img-dh{
+  width: 400px;
+  height: 250px;
+  position: absolute;
+  left: 65%;
+  top: 18%;
+}
+/* END ABOUT */

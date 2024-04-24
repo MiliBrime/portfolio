@@ -9,7 +9,7 @@ class NavBar extends Component {
         {/* links */}
         <Link to='/' className='itemTopBar'>HOME</Link> 
         <Link to='/about' className='itemTopBar'>ABOUT</Link>
-        <p className='itemTopBar'>SKILLS</p>
+        <Link to='/skills' className='itemTopBar'>SKILLS</Link>
         <p className='itemTopBar'>WORK</p>
         <p className='itemTopBar'>CONTACT</p>
       </div>
