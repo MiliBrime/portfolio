@@ -21,14 +21,14 @@ class Skills extends Component {
       { icon: <FaHtml5 />, name: "HTML5" },
       { icon: <FaCss3Alt />, name: "CSS3" },
       { icon: <IoLogoJavascript />, name: "JavaScript" },
-      { icon: <FaReact />, name: "React" },
       { icon: <FaNodeJs />, name: "Node.js" },
-      { icon: <SiMysql />, name: "MySQL" },
       { icon: <FaJava />, name: "Java" },
+      { icon: <FaReact />, name: "React" },
+      { icon: <SiMysql />, name: "MySQL" },
+      { icon: <SiIntellijidea />, name: "IntelliJ IDEA" },
+      { icon: <SiVisualstudiocode />, name: "Visual Studio Code" },
       { icon: <FaGithub />, name: "GitHub" },
       { icon: <FaTrello />, name: "Trello" },
-      { icon: <SiVisualstudiocode />, name: "Visual Studio Code" },
-      { icon: <SiIntellijidea />, name: "IntelliJ IDEA" },
     ];
     const softSkills = [
       "Communication",
@@ -45,26 +45,32 @@ class Skills extends Component {
       <>
       <NavBar />
       <div className='group-icons'>
-        <div className='centerInfo-about'>
           <p className='mySkills'>Technical Skills.</p>
-        <div className="skills-container">
-          {skills.map((skill, index) => (
-            <div key={index} className="skill">
-              {skill.icon}
-              <p>{skill.name}</p>
-            </div>
-          ))}
+          <div className="skills-container">
+            {skills.map((skill, index) => (
+              <div key={skill + index} className="skill">
+                {skill.icon}
+                <p>{skill.name}</p>
+              </div>
+            ))}
           </div>
+        <div className='soft-skills'>
+          <p className='mySkills'>Soft Skills.</p>
+          {/* <div className="skills-container"> */}
+          <div className="skills-container">
+            {softSkills.map((skill, index) => (
+              <div key={skill + index} className="skill">
+              <p>{skill}</p>
+              </div>
+            ))}
+          </div>
+          {/* </div> */}
+        </div>
+        <div className='skills-container'>
+          <p className='description1'>Planning, designing, and implementing web projects with integration of databases and APIs, user session management, and utilization of session and cookies for data storage. Implementation of the Model-View-Controller (MVC) architecture pattern.</p>
+          <p className='description'>With Java, I have implemented sequences, conditionals, loop structures, and arrays to solve complex problems.</p>
         </div>
       </div>
-        <div className='soft-skills'>
-            <p className='mySkills'>Soft Skills.</p>
-            <ul className="soft-skills-list">
-              {softSkills.map((skill, index) => (
-                <li key={index}>{skill}</li>
-              ))}
-            </ul>
-          </div>
       <SideBar />
     </>
   )
