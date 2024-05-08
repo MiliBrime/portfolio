@@ -14,6 +14,7 @@ import { FaTrello } from "react-icons/fa";
 import { SiVisualstudiocode } from "react-icons/si";
 import { SiIntellijidea } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
+import { RiEnglishInput } from "react-icons/ri";
 
 class Skills extends Component {
   render(){
@@ -29,6 +30,7 @@ class Skills extends Component {
       { icon: <SiVisualstudiocode />, name: "Visual Studio Code" },
       { icon: <FaGithub />, name: "GitHub" },
       { icon: <FaTrello />, name: "Trello" },
+      { icon: <RiEnglishInput />, name: "English Proficiency"}
     ];
     const softSkills = [
       "Communication",
@@ -67,7 +69,8 @@ class Skills extends Component {
           {/* </div> */}
         </div>
         <div className='skills-container'>
-          <p className='description1'>Planning, designing, and implementing web projects with integration of databases and APIs, user session management, and utilization of session and cookies for data storage. Implementation of the Model-View-Controller (MVC) architecture pattern.</p>
+          <p className='mySkills1'>Description</p>
+          <p className='description'>Planning, designing, and implementing web projects with integration of databases and APIs, user session management, and use of session and cookies for data storage. Implementation of the Model-View-Controller (MVC) architecture pattern.</p>
           <p className='description'>With Java, I have implemented sequences, conditionals, loop structures, and arrays to solve complex problems.</p>
         </div>
       </div>

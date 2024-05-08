@@ -24,35 +24,50 @@
 /* END top bar */
 
 /* Sidebar */
-.sideBar{
+
+.sideBar {
   margin-left: 10px;
   display: flex;
   flex-direction: column;
 }
 
-.icono{
-  background-color: white;
-  font-size: 40px;
-  margin-bottom: 10px;
-  transition: all 0.5s;
-  border-radius: 10%;
-}
-
-.icono:hover{
+.github:hover .icono,
+.linkedin:hover .icono,
+.email:hover .icono
+{
   background-color: #53138D;
 }
 
-.github{
-  color:black
+.github .icono,
+.linkedin .icono,
+.email .icono {
+  transition: background-color 0.4s; 
 }
 
-.linkedin{
-  color:#0077B5
+.icono {
+  background-color: #E6C9FF;
+  font-size: 40px;
+  margin-bottom: 10px;
+  border-radius: 10%;
 }
 
-.mail{
-  color: #030169
+.github {
+  color: black;
 }
+
+.linkedin {
+  color: #0077B5;
+}
+
+.mail {
+  color: #030169;
+}
+
+.iconsNames {
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
 /* END Sidebar */
 
 /* Center HOME content */
@@ -197,12 +212,14 @@
 /* END ABOUT */
 
 /* SKILLS */
+
 .group-icons{
     position: absolute;
     width: 85%;
     left: 10%;
-    top: 10%;
+    top: 15%;
 }
+
 .skills-container, .soft-skills {
   display: flex;
   flex-wrap: wrap; 
@@ -232,9 +249,10 @@
   margin:0;
 }
 
-.description1{
-  color:white;
-  margin-top:50px;
+.mySkills1 {
+  margin: 20px 0 10px 0;
+  font-size: 28px;
+  color: #B8860B;
 }
 
 .description{
@@ -242,3 +260,78 @@
   margin:0;
 }
 /* END SKILLS */
+
+/* PROJECTS */
+
+.mercadoLiebre{
+  max-width: 40%;
+  border-radius: 5%;
+}
+
+.singleProject{
+  display: flex;
+  margin-top: 50px;
+}
+
+.projectName, .projectDescription{
+  color:white;
+  margin:0
+}
+
+.projectName{
+  font-weight: 500;
+}
+
+.projectDescription{
+  margin: 10px 0;
+}
+
+.language{
+  display: inline-flex;
+  align-items: center;
+  background-color: #B8860B;
+  border-radius: 5px;
+  margin: 5px 10px 0 0;
+}
+
+.skill-icon,
+.skill-name {
+  background-color: #B8860B;
+  padding: 2px; 
+  margin: 0; 
+  color:black;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.name-description{
+  margin: 0 0 0 20px;
+}
+
+.links{
+    display: inline-flex;
+    align-items: center;
+    background-color: #E6C9FF;
+    border-radius: 20%;
+    border: solid 1px black;
+    margin: 5px 5px 0 0 ;
+    transition: all 0.5s
+}
+
+.link-icon, .link-name {
+  background-color: #E6C9FF;
+  padding: 0;
+  margin: 5px;
+  color: black;
+  transition: all 0.5s;
+}
+
+.links:hover {
+  background-color: #53138D;
+}
+
+.links:hover .link-name, .links:hover .link-icon {
+  background-color: #53138D;
+  color: white;
+}
+/* END PROJECTS */

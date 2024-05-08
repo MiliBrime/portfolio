@@ -11,9 +11,9 @@ class SideBar extends Component {
     return(
         <div className='sideBar'>
             {/* links */}
-            <Link className="github" to='https://github.com/MiliBrime' target="_blank"><FaGithub className='icono'/></Link>
-            <Link className="linkedin" to='https://www.linkedin.com/in/milagros-brime/' target="_blank"><FaLinkedin className='icono'/></Link>
-            <Link to='mailto:milibrime@hotmail.com' className="mail"><CiMail className='icono'/></Link>
+            <Link className="github" to='https://github.com/MiliBrime' target="_blank"><p className='iconsNames'>GitHub</p><FaGithub className='icono'/></Link>
+            <Link className="linkedin" to='https://www.linkedin.com/in/milagros-brime/' target="_blank"><p className='iconsNames'>LinkedIn</p><FaLinkedin className='icono'/></Link>
+            <Link to='mailto:milibrime@hotmail.com' className="email"><p className='iconsNames'>Email</p><CiMail className='icono'/></Link>
         </div>
     )
   }

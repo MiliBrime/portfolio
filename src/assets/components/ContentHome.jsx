@@ -14,7 +14,7 @@ class ContentHome extends Component {
                 <p className='hello'>Hello!</p>
                 <p className='name'>I'm Milagros.</p>
                 <p className='fullstack'> Full Stack Web Developer<span className="cursor"></span></p>
-                <p className='text'>Proactive and eager to find new challenges that allow me to enhance my professional development. I adapt easily and enjoy a collaborative environment.</p>
+                <p className='text'>Computer Science student with skills in the design and development of web applications, proactive and eager to find new challenges that allow me to enhance my professional development. I adapt easily and enjoy a collaborative environment.</p>
                 <button className="aboutMeButton" onClick={this.handleClick}>About me <FaLongArrowAltRight className='arrow'/></button>
             </div>
             <div className='img'>
