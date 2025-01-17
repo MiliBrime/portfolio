@@ -21,6 +21,10 @@
 .itemTopBar:hover{
   color:#B8860B;
 }
+
+.itemTopBar.active {
+  color: #B8860B; /* Este es el color mostaza */
+}
 /* END top bar */
 
 /* Sidebar */
@@ -335,4 +339,39 @@
   background-color: #53138D;
   color: white;
 }
+
+.pList{
+  margin-bottom: 100px;
+}
 /* END PROJECTS */
+
+/* CONTACT */
+.div-form{
+  position: absolute;
+  left: 30%;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-form{
+    width: 250px;
+    height: 30px;
+    background-color: white;
+}
+.input-form::placeholder {
+  text-align: center;
+}
+
+.input-form-text{
+    width: 250px;
+    height: 100px;
+    background-color: white;
+}
+.input-form-text::placeholder {
+  text-align: center;
+}
+
+/* END CONTACT */

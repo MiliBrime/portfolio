@@ -114,6 +114,26 @@ class Work extends Component {
                             </Link>
                         </div>
                     </div>
+                    <div className='work'>
+                        <p className='projectName'>Independent Work with Microenterprises</p>
+                        <p className='projectDescription'>Throughout my career as a freelance professional, I've had the privilege of working on a variety of projects within the realm of microenterprises. Below, I detail some of my responsibilities and standout achievements:</p>
+                        <ul className='projectDescription'>
+                            <li>
+                                <h4>Project Management and Execution:</h4><p>I led and executed multiple projects, demonstrating strategic planning skills and efficient execution. </p>
+                            </li>
+                            <li>
+                                <h4>Customer Service: </h4><p>I implemented customer service strategies that resulted in high levels of satisfaction and customer retention. My focus on understanding customer needs and providing effective solutions significantly contributed to maintaining strong client relationships. </p>
+                            </li>
+                            <li>
+                                <h4>Supply Chain Management: </h4><p>I effectively coordinated with distributors, optimizing the supply chain and improving operational efficiency. I established solid relationships with key suppliers and developed efficient processes to ensure timely delivery of products and services.</p>
+                            </li>
+                            <li>
+                                <h4>Social Media Management: </h4><p>I played a key role in managing and administering social media platforms, creating engaging content and increasing interaction with followers. My efforts resulted in a significant increase in audience engagement and the expansion of online presence for the projects.</p>
+                            </li>
+                            <li>
+                                <h4>Project Management with Trello: </h4><p className='pList'>I utilized the Trello platform effectively to plan and organize tasks, ensuring smooth and timely project execution. Trello's visual structure facilitated collaboration with team members and efficient management of delivery timelines.</p></li>
+                        </ul>
+                    </div>
                 </div>
             </>
         )
